@@ -1,10 +1,150 @@
 body {
     margin: auto 0;
-    background-color: rgb(242, 241, 219);
+}
+
+/* Fondo deslizante */
+.slider-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: cambiar 160s infinite;
+}
+
+.inicio {
+    background-image: url('../img/La\ dulsura\ en\ persona.png');
+    animation-delay: 1s;  
+}
+
+.slide1 {
+  background-image: url('../img/MichinoProducto1.webp');
+  animation-delay: 5s;
+}
+
+.slide2 {
+  background-image: url('../img/MichinoProducto2.webp');
+  animation-delay: 10s;
+}
+
+.slide3 {
+  background-image: url('../img/MichinoProducto3.webp');
+  animation-delay: 15s;
+}
+
+.slide4 {
+  background-image: url('../img/MichinoProducto4.jpg');
+  animation-delay: 20s;
+}
+
+.slide5 {
+  background-image: url('../img/MichinoProducto5.webp');
+  animation-delay: 25s;
+}
+
+.slide6 {
+  background-image: url('../img/MichinoProducto6.jpg');
+  animation-delay: 30s;
+}
+
+.slide7 {
+  background-image: url('../img/MichinoProducto7.jpg');
+  animation-delay: 35s;
+}
+
+.slide8 {
+  background-image: url('../img/MichinoProducto8.jpg');
+  animation-delay: 40s;
+}
+
+.slide9 {
+  background-image: url('../img/MichinoProducto9.webp');
+  animation-delay: 45s;
+}
+
+.slide10 {
+  background-image: url('../img/MichinoProducto10.webp');
+  animation-delay: 50s;
+}
+
+.slide11 {
+  background-image: url('../img/MichinoProducto11.webp');
+  animation-delay: 55s;
+}
+
+.slide12 {
+  background-image: url('../img/MichinoProducto12.webp');
+  animation-delay: 60s;
+}
+
+.slide13 {
+  background-image: url('../img/MichinoProducto13.jpg');
+  animation-delay: 65s;
+}
+
+.slide14 {
+  background-image: url('../img/MichinoProducto14.jpg');
+  animation-delay: 70s;
+}
+
+.slide15 {
+  background-image: url('../img/MichinoProducto15.jpg');
+  animation-delay: 75s;
+}
+
+.slide16 {
+  background-image: url('../img/MichinoProducto16.jpg');
+  animation-delay: 80s;
+}
+
+.slide17 {
+  background-image: url('../img/MichinoProducto17.jpg');
+  animation-delay: 85s;
+}
+
+.slide18 {
+  background-image: url('../img/MichinoProducto18.webp');
+  animation-delay: 90s;
+}
+
+.slide19 {
+  background-image: url('../img/MichinoProducto19.webp');
+  animation-delay: 95s;
+}
+
+.slide20 {
+  background-image: url('../img/MichinoProducto20.webp');
+  animation-delay: 100s;
+}
+
+/* Animación de desvanecimiento */
+@keyframes cambiar {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Contenido visible encima del fondo */
+.contenido {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
 }
 
 .division {
-    background-color: rgb(242, 255, 0);
+    background-color: rgba(242, 255, 0, 0.349);
     width: 100%;
     display: flex;
     height: 70px;
@@ -17,6 +157,7 @@ body {
 }
 
 .division li {
+    transition: 3s;
     align-items: center;
     list-style: none;
     border: solid black;
@@ -27,10 +168,10 @@ body {
     justify-content: center;
 }
 
-.division :hover {
-    cursor: pointer;
-    background-color: rgb(241, 254, 53);
-    color: white;
+.division :hover {  
+    background-color: rgba(241, 254, 53, 0.797);
+    transform: scale(1.1);
+    transform: scale3d(10);
 }
 
 /* Carruseles */
@@ -41,14 +182,14 @@ body {
     background-color: rgba(255, 246, 217, 0.717);
 
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(234, 255, 46, 0.45);
+    box-shadow: 0 0 15px rgba(234, 255, 46, 0.208);
 }
 
 .carousel-title {
-    color: #eeff00;
+    color: #020202;
     margin-bottom: 20px;
-    font-size: 1.8rem;
-    text-shadow: 0 0 5px #621fffd3;
+    font-size: 1.7rem;
+    /* text-shadow: 0 0 5px #621fffd3; */
     padding-top: 15px;
 }
 
@@ -87,7 +228,7 @@ body {
 }
 
 .carousel-item:hover {
-    transform: translateY(-5px);
+    transform: translatex(-5px);
     box-shadow: 0 10px 20px rgba(232, 255, 82, 0.5);
 }
 
@@ -107,10 +248,25 @@ body {
 
 .carousel-info h3 {
     color: #ffff00;
-    margin-bottom: 10px;
+    margin-bottom:0.9px;
 }
 
 .carousel-info p {
     color: #ffffff;
     font-size: 0.9rem;
+}
+.caja2 {
+    width: 25px;
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    position: fixed;
+}
+.carrito {
+    transition: 0.5s;
+    border-radius: 50px;
+}
+.caja2 :hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
