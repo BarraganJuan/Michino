@@ -1,5 +1,5 @@
 body {
-    margin: auto 0;
+  margin: auto 0;
 }
 
 /* Fondo deslizante */
@@ -19,12 +19,12 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: cambiar 160s infinite;
+  animation: cambiar 85s infinite;
 }
 
 .inicio {
-    background-image: url('../img/La\ dulsura\ en\ persona.png');
-    animation-delay: 1s;  
+  background-image: url('../img/La\ dulsura\ en\ persona.png');
+  animation-delay: 0s;
 }
 
 .slide1 {
@@ -129,11 +129,25 @@ body {
 
 /* Animación de desvanecimiento */
 @keyframes cambiar {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Contenido visible encima del fondo */
@@ -144,129 +158,148 @@ body {
 }
 
 .division {
-    background-color: rgba(242, 255, 0, 0.349);
-    width: 100%;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0%;
-    gap: 15px;
+  background-color: rgba(242, 255, 0, 0.349);
+  width: 100%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  gap: 15px;
 }
 
 .division li {
-    transition: 3s;
-    align-items: center;
-    list-style: none;
-    border: solid black;
-    transition: 0.3s;
-    height: 50%;
-    width: 30%;
-    text-align: center;
-    justify-content: center;
+  transition: 3s;
+  align-items: center;
+  list-style: none;
+  border: solid black;
+  transition: 0.3s;
+  height: 50%;
+  width: 30%;
+  text-align: center;
+  justify-content: center;
 }
 
-.division :hover {  
-    background-color: rgba(241, 254, 53, 0.797);
-    transform: scale(1.1);
-    transform: scale3d(10);
+.division :hover {
+  background-color: rgba(241, 254, 53, 0.797);
+  transform: scale(1.1);
+  transform: scale3d(10);
 }
 
 /* Carruseles */
 .carousel-container {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-    background-color: rgba(255, 246, 217, 0.717);
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: rgba(255, 246, 217, 0.717);
 
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(234, 255, 46, 0.208);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(234, 255, 46, 0.208);
 }
 
 .carousel-title {
-    color: #020202;
-    margin-bottom: 20px;
-    font-size: 1.7rem;
-    /* text-shadow: 0 0 5px #621fffd3; */
-    padding-top: 15px;
+  color: #020202;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  /* text-shadow: 0 0 5px #621fffd3; */
+  padding-top: 15px;
 }
 
 .carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #fffb00e5 #00000038;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #fffb00e5 #00000038;
 }
 
 .carousel::-webkit-scrollbar {
-    height: 8px;
+  height: 8px;
 }
 
 .carousel::-webkit-scrollbar-track {
-    background: #d9ff0340;
+  background: #d9ff0340;
 }
 
 .carousel::-webkit-scrollbar-thumb {
-    background-color: #eeff00;
-    border-radius: 20px;
+  background-color: #eeff00;
+  border-radius: 20px;
 }
 
 .carousel-item {
-    min-width: 250px;
-    height: 350px;
-    background-color: rgba(64, 1, 1, 0.313);
-    border: 1px solid #f9ff4f;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 250px;
+  height: 350px;
+  background-color: rgba(64, 1, 1, 0.313);
+  border: 1px solid #f9ff4f;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .carousel-item:hover {
-    transform: translatex(-5px);
-    box-shadow: 0 10px 20px rgba(232, 255, 82, 0.5);
+  transform: translatex(-5px);
+  box-shadow: 0 10px 20px rgba(232, 255, 82, 0.5);
 }
 
 .carousel-img {
-    height: 70%;
-    background-size: cover;
-    background-position: center;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-info {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .carousel-info h3 {
-    color: #ffff00;
-    margin-bottom:0.9px;
+  color: #ffff00;
+  margin-bottom: 0.9px;
 }
 
 .carousel-info p {
-    color: #ffffff;
-    font-size: 0.9rem;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
+
 .caja2 {
-    width: 25px;
-    position: absolute;
-    bottom: 30px;
-    right: 100px;
-    position: fixed;
+  width: 25px;
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  position: fixed;
 }
+
 .carrito {
-    transition: 0.5s;
-    border-radius: 50px;
+  transition: 0.5s;
+  border-radius: 50px;
 }
+
 .caja2 :hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #020202;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
