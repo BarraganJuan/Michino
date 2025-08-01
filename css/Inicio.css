@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-position: center;
   opacity: 0;
-  animation: cambiar 85s infinite;
+  animation: cambiar 200s infinite;
 }
 
 .inicio {
@@ -127,27 +127,94 @@ body {
   animation-delay: 100s;
 }
 
+.slide21 {
+  background-image: url('../img/MichinoProducto21.jpg');
+  animation-delay: 105s;
+}
+.slide22 {
+  background-image: url('../img/MichinoProducto22.jpg');
+  animation-delay: 110s;
+}
+.slide23 {
+  background-image: url('../img/MichinoProducto23.webp');
+  animation-delay: 115s;
+}
+.slide24 {
+  background-image: url('../img/MichinoProducto24.webp');
+  animation-delay: 120s;
+}
+.slide25 {
+  background-image: url('../img/MichinoProducto25.webp');
+  animation-delay: 125s;
+}
+.slide26 {
+  background-image: url('../img/MichinoProducto26.webp');
+  animation-delay: 130s;
+}
+.slide27 {
+  background-image: url('../img/MichinoProducto27.jpg');
+  animation-delay: 135s;
+}
+.slide28 {
+  background-image: url('../img/MichinoProducto28.jpg');
+  animation-delay: 140s;
+}
+.slide29 {
+  background-image: url('../img/MichinoProducto29.jpg');
+  animation-delay: 145s;
+}
+.slide30 {
+  background-image: url('../img/MichinoProducto30.webp');
+  animation-delay: 150s;
+}
+.slide31 {
+  background-image: url('../img/MichinoProducto31.webp');
+  animation-delay: 155s;
+}
+.slide32 {
+  background-image: url('../img/MichinoProducto32.webp');
+  animation-delay: 160s;
+}
+.slide33 {
+  background-image: url('../img/MichinoProducto33.webp');
+  animation-delay: 165s;
+}
+.slide34 {
+  background-image: url('../img/MichinoProducto34.webp');
+  animation-delay: 170s;
+}
+.slide35 {
+  background-image: url('../img/MichinoProducto35.webp');
+  animation-delay: 175s;
+}
+.slide36 {
+  background-image: url('../img/MichinoProducto36.webp');
+  animation-delay: 180s;
+}
+.slide37 {
+  background-image: url('../img/MichinoProducto37.webp');
+  animation-delay: 185s;
+}
+.slide38 {
+  background-image: url('../img/MichinoProducto38.webp');
+  animation-delay: 190s;
+}
+.slide39 {
+  background-image: url('../img/MichinoProducto39.webp');
+  animation-delay: 195s;
+}
+.slide40 {
+  background-image: url('../img/MichinoProducto40.jpg');
+  animation-delay: 200s;
+}
+
 /* Animación de desvanecimiento */
 @keyframes cambiar {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
+  0%   { opacity: 0; }
+  2.5% { opacity: 1; }
+  5%   { opacity: 1; }
+  7.5% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /* Contenido visible encima del fondo */
@@ -294,9 +361,9 @@ body {
 }
 
 footer {
-  background-color: #020202;
+  background-color: #fbff007c;
   width: 100%;
-  color: white;
+  color: rgba(234, 0, 255, 0.616);
   display: flex;
   justify-content: center;
   font-family: "Rock Salt", cursive;
