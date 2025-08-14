@@ -1,0 +1,53 @@
+    body {
+        background: linear-gradient(to right, #eaff00, #ff1818);
+        /* Morado a azul */
+        font-family: Arial, sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .formulario {
+        background-color: rgba(0, 0, 50, 0.532);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px #000;
+    }
+
+    h2 {
+        text-align: center;
+        color: #fff;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+    }
+
+    button {
+        transition: 0.3s;
+        width: 100%;
+        padding: 10px;
+        background-color: #b300009e;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #700000;
+    }
+
+    .inmovil {
+        width: 25px;
+        position: absolute;
+        bottom: 30px;
+        right: 100px;
+        position: fixed;
+    }
